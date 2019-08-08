@@ -1,0 +1,7 @@
+sudo: false
+dist: trusty
+language: go
+go: 1.10.x
+script:
+  - go build
+  - ./travis-local-test
