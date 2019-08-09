@@ -3,5 +3,12 @@ dist: trusty
 language: go
 go: 1.10.x
 script:
-  - go build
-  - ./travis-local-test
+- go build
+- "./travis-local-test"
+deploy:
+  provider: releases
+  api_key:
+    secure: PXvGfm9wEkPjeISmzg0415VjYAtozW+Ii25n76yScmdoMm8zvuHqprnHl7+9yZrtuJffYdBie12EOrYY9IgOpym+qJzggmqdo8VTWnG3p1Wh2NiDjhR4knYTB9b2XDKb3lXOeodsSFFtvL558/wEXOS5IxnBQVYmk4uJtzBiSZBEZgxb/YpipavJLTNTtEcEeu35MVpz0J9dC860Dsj69NVzub9ou9JNXgRUBTUx6mghatp1l+roRCxUq7NhEM0KSLFDtkNG+7PWL3KvN5j79zrAq4+GTyiwsnRXFb8nUG3k9XWQSJras08biDialIl66387k3Jlg+YPXxcdM+eenP6c96fLI42kH92SUTzZ3j3Q+qKBitSEKUFlj8ggvNvUhOOtr8Ppwu/7SnXGLpUeVAtzm7OrZ5bmQL35my9aq2bJvzYYz4cUoOi/7XqaLU1i862i+9afW86U1tCQjNM38ph5TenPvIzvu1QnrLtAWnqOUnBGgE/yh20hFF0ateI94IpTF2VX0XUvxJNBSCE4WN4yzn6ZrPXIzSe3u4M1xnpgqANJw28HNRRmxXiv49EcI/cLlDNjCG0hDNK5U90oSmP2W8ebWiFunqLb/yKKs6IF+POe1Wia98AtZK+5xJfCgDwcNdNwE8iMR9q3CYmVO5ehFWdZeifV/JY2gDSF030=
+  file: travis-local-test
+  on:
+    repo: shuizhongmose/travis-local-test
