@@ -1,13 +1,11 @@
-build:
-  image: golang:1.12.7
-  environment:
-    - GO15VENDOREXPERIMENT=1
-    - GOOS=linux
-    - GOARCH=amd64
-    - CGO_ENABLED=0
-  commands:
-    - go build
-    - ./travis-local-test
+kind: pipeline  
+name: deploy  
+  
+steps:  
+- name: hello-world
+  image: docker  
+  commands:  
+    - echo "hello world"
     
     
     
