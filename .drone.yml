@@ -1,0 +1,6 @@
+build:
+  image: golang:1.12.7
+  commands:
+    - go build
+    - ./travis-local-test
+    
