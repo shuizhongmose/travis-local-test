@@ -6,5 +6,4 @@ steps:
   image: docker  
   commands:  
     - echo "hello world"
-   
     
