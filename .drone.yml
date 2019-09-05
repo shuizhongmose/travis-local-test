@@ -7,3 +7,4 @@ steps:
   commands:  
     - echo "hello world"
     - echo $FTPPWD
+    
