@@ -6,4 +6,11 @@ steps:
   image: docker 
   commands:  
     - echo "hello world"
+    - echo ${TEST_PWD}
+    - echo $TEST_PWD
+    - echo $$TEST_PWD
     - echo $${TEST_PWD}
+    - echo "${TEST_PWD}"
+    - echo "$TEST_PWD"
+    - echo "$$TEST_PWD"
+    - echo "$${TEST_PWD}"
