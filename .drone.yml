@@ -6,6 +6,6 @@ steps:
   image: docker 
   commands:  
     - echo "hello world"
-    - echo $PASSWORD
+    - echo $$PASSWORD
     
     
