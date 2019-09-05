@@ -3,8 +3,11 @@ name: deploy
   
 steps:  
 - name: hello-world
-  image: docker  
+  image: docker 
+  environment:
+    PWD:
+      from_secret: ftppwd
   commands:  
     - echo "hello world"
-    - echo $FTPPWD
+    - echo $PWD
     
