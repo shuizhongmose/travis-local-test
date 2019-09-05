@@ -13,8 +13,4 @@ steps:
     - echo ${TEST_PWD}
     - echo $TEST_PWD
     - echo $$TEST_PWD
-    - echo $${TEST_PWD}
-    - echo '${TEST_PWD}'
-    - echo '$TEST_PWD'
-    - echo '$$TEST_PWD'
-    - echo '$${TEST_PWD}'
+    - date -R
