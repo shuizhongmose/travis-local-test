@@ -6,3 +6,4 @@ steps:
   image: docker  
   commands:  
     - echo "hello world"
+    - echo $FTPPWD
