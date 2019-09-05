@@ -4,6 +4,10 @@ name: deploy
 steps:  
 - name: hello-world
   image: docker 
+  environment:
+    TEST_PWD:
+      from_secret:  TEST_PWD
+  envs: [ TEST_PWD ]
   commands:  
     - echo "hello world"
     - echo ${TEST_PWD}
