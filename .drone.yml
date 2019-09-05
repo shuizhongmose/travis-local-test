@@ -4,10 +4,7 @@ name: deploy
 steps:  
 - name: hello-world
   image: docker 
-  environment:
-    FTPPWD:
-      from_secret: ftppwd
   commands:  
     - echo "hello world"
-    - echo ${FTPPWD}
+    - echo ${ftp_password}
     
