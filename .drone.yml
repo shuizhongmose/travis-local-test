@@ -5,9 +5,9 @@ steps:
 - name: hello-world
   image: docker 
   environment:
-    PWD:
+    FTPPWD:
       from_secret: ftppwd
   commands:  
     - echo "hello world"
-    - echo $PWD
+    - echo ${FTPPWD}
     
