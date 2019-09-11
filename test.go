@@ -7,5 +7,5 @@ func main()  {
 	newCertId := []byte{}
 	newCertId = certid
 	fmt.Println(string(newCertId))
-	fmt.Println("hello world")
+	fmt.Println("hello world test")
 }
